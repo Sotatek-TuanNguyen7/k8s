@@ -4,11 +4,10 @@ metadata:
   name: service-nodeport
   namespace: my-app
 spec:   
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: my-app
-    apptype: frontend
-  ports: 
-    - targetPort: 80 
+  ports:
+    - protocol: TCP
       port: 80
-      nodePort: 30808
+      targetPort: 3000
