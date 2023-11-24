@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: nguyentuan7277/demo-app:prod-0.4
+        image: nguyentuan7277/demo-app:prod-0.5
         resources:
           limits:
             memory: "128Mi"
